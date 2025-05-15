@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fases del Grooming - Prevención del Grooming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo">Prevención del Grooming</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="que-es.html">¿Qué es?</a></li>
+                    <li><a href="fases.html" class="active">Fases</a></li>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li><a href="deteccion.html">Detección</a></li>
+                    <li><a href="ley.html">Legislación</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Las fases del Grooming</h1>
+            <p>Conoce el proceso que siguen los acosadores para manipular a sus víctimas</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p>
+                El online grooming incluye una serie de conductas que pueden ser desordenadas, pero, por lo general, existen
+                patrones de conducta y fases comunes que vamos a ver a continuación para poder detectarlo y prevenirlo.
+            </p>
+
+            <div class="phases-interactive">
+                <div class="phases-navigation">
+                    <div class="phases-counter">
+                        Fase <span id="current-phase">1</span> de 5
+                    </div>
+                    <div class="phases-buttons">
+                        <button id="prev-phase" class="btn btn-outline" disabled>
+                            <i class="fas fa-arrow-left"></i> Anterior
+                        </button>
+                        <button id="next-phase" class="btn btn-primary">
+                            Siguiente <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="phases-progress">
+                    <div class="phase-progress-item active" data-phase="1"></div>
+                    <div class="phase-progress-item" data-phase="2"></div>
+                    <div class="phase-progress-item" data-phase="3"></div>
+                    <div class="phase-progress-item" data-phase="4"></div>
+                    <div class="phase-progress-item" data-phase="5"></div>
+                </div>
+
+                <div class="phases-content-container">
+                    <!-- Fase 1 -->
+                    <div class="phase-content active" id="phase-1">
+                        <h2>Fase 1: Creación de un vínculo de confianza</h2>
+                        <p class="phase-description">El primer paso del acosador es establecer una relación de confianza con la víctima.</p>
+                        
+                        <div class="phase-details">
+                            <p>
+                                En esta fase inicial, el acosador contacta con la niña o niño y establece un vínculo de confianza. Para
+                                lograrlo:
+                            </p>
+                            <ul class="list">
+                                <li>Finge otra edad, muy cercana a la de la víctima</li>
+                                <li>Muestra interés por los gustos y aficiones del menor</li>
+                                <li>Ofrece comprensión y apoyo emocional</li>
+                                <li>Puede hacer regalos virtuales o reales</li>
+                                <li>Empatiza profundamente con los problemas del menor</li>
+                                <li>Recopila información personal que luego podría usar para manipular</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-title">Ejemplo de conversación:</p>
+                                <div class="example-content">
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "Hola! Vi que te gusta [artista/juego popular]. ¡A mí
+                                        también! Tengo 14 años, ¿y tú?"
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Menor:</span> "Hola! Sí, me encanta. Tengo 13."
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "¡Genial! Es difícil encontrar gente que entienda lo
+                                        bueno que es. La mayoría de mis amigos no lo entienden. ¿A ti te pasa lo mismo?"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fase 2 -->
+                    <div class="phase-content" id="phase-2">
+                        <h2>Fase 2: Aislamiento de la víctima</h2>
+                        <p class="phase-description">El acosador busca separar al menor de su red de apoyo.</p>
+                        
+                        <div class="phase-details">
+                            <p>
+                                En esta fase, el agresor persigue arrancar la red de apoyo natural del menor (familiares, amistades,
+                                docentes, etc.) dejándolo desprotegido:
+                            </p>
+                            <ul class="list">
+                                <li>Insiste en la necesidad de mantener todo en secreto</li>
+                                <li>Crea un ambiente de exclusividad y complicidad</li>
+                                <li>Puede criticar sutilmente a los padres o amigos del menor</li>
+                                <li>Convence al menor de que nadie lo entiende como él/ella</li>
+                                <li>Fomenta la comunicación en horarios donde el menor está solo</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-title">Ejemplo de conversación:</p>
+                                <div class="example-content">
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "¿Tus padres revisan tus mensajes? Los míos son muy
+                                        pesados con eso."
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Menor:</span> "A veces mi mamá me pregunta con quién hablo."
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "Qué mal... los adultos no entienden nuestra
+                                        privacidad. Mejor hablemos por [otra app]. Y no les digas, se preocupan por todo y no nos dejarían ser
+                                        amigos."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fase 3 -->
+                    <div class="phase-content" id="phase-3">
+                        <h2>Fase 3: Valoración de los riesgos</h2>
+                        <p class="phase-description">El acosador evalúa las posibilidades de ser descubierto.</p>
+                        
+                        <div class="phase-details">
+                            <p>El agresor tiende siempre a asegurar su posición, así que en esta fase:</p>
+                            <ul class="list">
+                                <li>Pregunta a la víctima si alguien más conoce su relación</li>
+                                <li>Intenta averiguar quién más tiene acceso al ordenador o dispositivo que utiliza el menor</li>
+                                <li>Busca información sobre horarios y rutinas familiares</li>
+                                <li>Evalúa el nivel de supervisión parental</li>
+                                <li>Puede sugerir formas de comunicación más privadas o encriptadas</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-title">Ejemplo de conversación:</p>
+                                <div class="example-content">
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "¿A qué hora sueles conectarte? ¿Cuándo estás solo/a en
+                                        casa?"
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Menor:</span> "Normalmente por la tarde, después de clases. Mis padres
+                                        llegan a las 6."
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "Perfecto, podemos hablar mejor entonces. ¿Alguien más
+                                        usa tu teléfono o computadora? ¿Tus padres o hermanos?"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fase 4 -->
+                    <div class="phase-content" id="phase-4">
+                        <h2>Fase 4: Conversaciones sobre sexo</h2>
+                        <p class="phase-description">El acosador introduce gradualmente temas sexuales en la conversación.</p>
+                        
+                        <div class="phase-details">
+                            <p>Una vez se siente con confianza, el abusador:</p>
+                            <ul class="list">
+                                <li>Empieza a introducir conversaciones sexuales de manera paulatina</li>
+                                <li>Busca que la víctima se familiarice tanto con la temática sexual como con el vocabulario</li>
+                                <li>Puede enviar material sexual "educativo" o "divertido"</li>
+                                <li>Normaliza hablar de temas íntimos y sexuales</li>
+                                <li>Puede presentar comportamientos sexuales como normales entre amigos</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-title">Ejemplo de conversación:</p>
+                                <div class="example-content">
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "¿Has dado tu primer beso ya? Yo sí, fue el año
+                                        pasado."
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Menor:</span> "No todavía..."
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "No te preocupes, es normal. Mira, te envío un video
+                                        divertido sobre eso... [envía contenido inapropiado]. ¿Qué te parece? Todos mis amigos hablan de estas
+                                        cosas."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fase 5 -->
+                    <div class="phase-content" id="phase-5">
+                        <h2>Fase 5: Peticiones de naturaleza sexual</h2>
+                        <p class="phase-description">El objetivo final: obtener material sexual o un encuentro físico.</p>
+                        
+                        <div class="phase-details">
+                            <p>Este es el objetivo principal del online grooming. En esta última fase el criminal:</p>
+                            <ul class="list">
+                                <li>Utiliza la manipulación, las amenazas, el chantaje o la coerción</li>
+                                <li>Busca que la víctima le envíe material sexual</li>
+                                <li>Puede pedir que relate fantasías sexuales</li>
+                                <li>Intenta que la relación culmine con un encuentro físico</li>
+                                <li>Si obtiene material comprometedor, puede usarlo para extorsionar y pedir más</li>
+                            </ul>
+                            <div class="example-box">
+                                <p class="example-title">Ejemplo de conversación:</p>
+                                <div class="example-content">
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "Confío mucho en ti, por eso te envié mi foto. ¿No
+                                        confías en mí para enviarme una tuya?"
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Menor:</span> "No sé, me da vergüenza..."
+                                    </p>
+                                    <p>
+                                        <span class="example-name">Acosador:</span> "Solo una foto en traje de baño, como si estuvieras en
+                                        la playa. Si no lo haces, pensaré que no somos amigos de verdad. Además, ya le conté a todos mis amigos
+                                        sobre ti."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="deteccion.html" class="btn btn-primary">
+                    Cómo detectar el grooming
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Recursos de ayuda</h3>
+                    <ul>
+                        <li><a href="#">Línea de ayuda: 1147</a></li>
+                        <li><a href="#">Policía Nacional: 911</a></li>
+                        <li><a href="#">PANI: 1147</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Sobre este sitio</h3>
+                    <p>
+                        Este sitio web tiene como objetivo informar y educar sobre el grooming, sus consecuencias y cómo
+                        prevenirlo.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Sitio Informativo sobre Grooming</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

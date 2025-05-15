@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Grooming - Prevención del Grooming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo">Prevención del Grooming</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="que-es.html">¿Qué es?</a></li>
+                    <li><a href="fases.html">Fases</a></li>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li><a href="deteccion.html">Detección</a></li>
+                    <li><a href="ley.html">Legislación</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="simulador.html" class="active">Simulador</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Simulador de conversación</h1>
+            <p>Experimenta cómo opera un acosador en una conversación de grooming</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="alert alert-danger">
+                <div class="alert-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="alert-content">
+                    <h3>Advertencia</h3>
+                    <p>
+                        Este simulador tiene fines educativos. Las conversaciones simuladas pueden resultar incómodas pero reflejan
+                        situaciones reales de grooming. El objetivo es reconocer patrones de manipulación.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="chat-simulator">
+                    <div class="chat-header">
+                        <div class="chat-person">
+                            <div class="chat-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="chat-info">
+                                <p class="chat-name">Ana</p>
+                                <p class="chat-age">13 años</p>
+                            </div>
+                        </div>
+                        <div class="chat-person">
+                            <div class="chat-info text-right">
+                                <p class="chat-name">Carlos</p>
+                                <p class="chat-age" id="acosador-edad">18 años</p>
+                            </div>
+                            <div class="chat-avatar">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Los mensajes se cargarán con JavaScript -->
+                    </div>
+
+                    <div class="chat-navigation">
+                        <div class="chat-buttons">
+                            <button id="prev-step" class="btn btn-outline" disabled>
+                                <i class="fas fa-arrow-left"></i> Anterior
+                            </button>
+                            <button id="next-step" class="btn btn-primary">
+                                Siguiente <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="chat-actions">
+                            <button id="show-warning" class="btn btn-danger-outline">
+                                <i class="fas fa-exclamation-triangle"></i> Ver señales de alerta
+                            </button>
+                            <button id="show-advice" class="btn btn-success-outline">
+                                <i class="fas fa-check-circle"></i> ¿Cómo actuar?
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="warning-box" class="info-box warning-box hidden">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Señales de alerta en esta etapa:</h3>
+                        <ul class="list" id="warning-list">
+                            <!-- Las señales de alerta se cargarán con JavaScript -->
+                        </ul>
+                    </div>
+
+                    <div id="advice-box" class="info-box advice-box hidden">
+                        <h3><i class="fas fa-check-circle"></i> Cómo actuar en esta situación:</h3>
+                        <ul class="list" id="advice-list">
+                            <!-- Los consejos se cargarán con JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>¿Qué aprender de este simulador?</h2>
+                <ul class="list">
+                    <li>Los acosadores suelen hacerse pasar por personas de edad similar a la víctima</li>
+                    <li>Buscan establecer una conexión rápida basada en intereses comunes</li>
+                    <li>Intentan aislar a la víctima de su red de apoyo</li>
+                    <li>Evalúan el nivel de supervisión parental</li>
+                    <li>Introducen gradualmente temas de naturaleza sexual</li>
+                    <li>Utilizan manipulación, presión y chantaje emocional</li>
+                    <li>Solicitan material comprometedor prometiendo confidencialidad</li>
+                </ul>
+            </div>
+
+            <div class="button-container">
+                <a href="prevencion.html" class="btn btn-primary">
+                    Cómo prevenir el grooming
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Recursos de ayuda</h3>
+                    <ul>
+                        <li><a href="#">Línea de ayuda: 1147</a></li>
+                        <li><a href="#">Policía Nacional: 911</a></li>
+                        <li><a href="#">PANI: 1147</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Sobre este sitio</h3>
+                    <p>
+                        Este sitio web tiene como objetivo informar y educar sobre el grooming, sus consecuencias y cómo
+                        prevenirlo.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Sitio Informativo sobre Grooming</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

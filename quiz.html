@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Grooming - Prevención del Grooming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo">Prevención del Grooming</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="que-es.html">¿Qué es?</a></li>
+                    <li><a href="fases.html">Fases</a></li>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li><a href="deteccion.html">Detección</a></li>
+                    <li><a href="ley.html">Legislación</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Evalúa tus conocimientos</h1>
+            <p>Pon a prueba lo que has aprendido sobre el grooming con este breve cuestionario</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <div id="quiz-app" class="quiz-app">
+                    <!-- Estado inicial del quiz -->
+                    <div id="quiz-start" class="quiz-start">
+                        <h2>Quiz sobre Grooming</h2>
+                        <p>Este cuestionario te ayudará a evaluar tus conocimientos sobre el grooming y cómo prevenirlo.</p>
+                        <p>Consta de 5 preguntas de opción múltiple. ¡Buena suerte!</p>
+                        <button id="start-quiz" class="btn btn-primary">Comenzar Quiz</button>
+                    </div>
+
+                    <!-- Preguntas del quiz (se mostrarán con JavaScript) -->
+                    <div id="quiz-questions" class="quiz-questions hidden">
+                        <div class="quiz-header">
+                            <div class="quiz-progress">
+                                Pregunta <span id="current-question">1</span> de <span id="total-questions">5</span>
+                            </div>
+                            <div class="quiz-score">
+                                Puntuación: <span id="current-score">0</span>/<span id="max-score">5</span>
+                            </div>
+                        </div>
+
+                        <div id="question-container" class="question-container">
+                            <!-- El contenido de las preguntas se cargará con JavaScript -->
+                        </div>
+
+                        <div id="feedback-container" class="feedback-container hidden">
+                            <!-- El feedback se mostrará aquí -->
+                        </div>
+
+                        <button id="next-question" class="btn btn-primary" disabled>
+                            Siguiente <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Resultados del quiz (se mostrarán con JavaScript) -->
+                    <div id="quiz-results" class="quiz-results hidden">
+                        <div class="results-content">
+                            <div class="score-circle">
+                                <span id="final-score">0</span>/<span id="final-max-score">5</span>
+                            </div>
+                            <h3 id="score-message">¡Buen trabajo!</h3>
+                            <p id="score-description">Has demostrado un buen conocimiento sobre el grooming.</p>
+                        </div>
+
+                        <div class="results-message">
+                            <p>
+                                Recuerda que la educación y la comunicación son las mejores herramientas para prevenir el grooming.
+                            </p>
+                        </div>
+
+                        <button id="restart-quiz" class="btn btn-primary">
+                            <i class="fas fa-redo"></i> Reiniciar Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Recursos de ayuda</h3>
+                    <ul>
+                        <li><a href="#">Línea de ayuda: 1147</a></li>
+                        <li><a href="#">Policía Nacional: 911</a></li>
+                        <li><a href="#">PANI: 1147</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Sobre este sitio</h3>
+                    <p>
+                        Este sitio web tiene como objetivo informar y educar sobre el grooming, sus consecuencias y cómo
+                        prevenirlo.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Sitio Informativo sobre Grooming</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
